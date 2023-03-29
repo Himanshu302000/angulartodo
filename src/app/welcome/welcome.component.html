@@ -1,3 +1,9 @@
-<h1>Hello {{name}} Welcome </h1>
+<div class="container">
+    <h1>Hello {{name}} Welcome </h1>
 <h1>You can manage your todos  <a routerLink="/todos">here</a></h1>
-<a href=""></a>
+</div>
+
+<div class="container">
+    Click here to get acustomized welcome message
+    <button (click)="getWelcomeMessage()">Get welcome Message</button>
+</div>
