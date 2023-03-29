@@ -7,3 +7,11 @@
     Click here to get acustomized welcome message
     <button (click)="getWelcomeMessage()">Get welcome Message</button>
 </div>
+
+<div class="container" *ngIf="customwelcome">
+    <h1>Custom welcome message is {{customwelcome}}</h1>
+</div>
+
+<div class="container" *ngIf="error" style="background-color: red; color: aliceblue;">
+    {{error}}
+</div>
