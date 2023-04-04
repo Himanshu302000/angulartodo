@@ -1,17 +1,5 @@
 <div class="container">
     <h1>Hello {{name}} Welcome </h1>
-<h1>You can manage your todos  <a routerLink="/todos">here</a></h1>
+<h1>You can manage your todos  <button routerLink="/todos">here</button></h1>
 </div>
 
-<div class="container">
-    Click here to get acustomized welcome message
-    <button (click)="getWelcomeMessage()">Get welcome Message</button>
-</div>
-
-<div class="container" *ngIf="customwelcome">
-    <h1>Custom welcome message is {{customwelcome}}</h1>
-</div>
-
-<div class="container" *ngIf="error" style="background-color: red; color: aliceblue;">
-    {{error}}
-</div>

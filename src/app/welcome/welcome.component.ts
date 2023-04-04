@@ -14,7 +14,7 @@ export class WelcomeComponent {
   constructor(private route:ActivatedRoute,
     public service:WelcomeDataService)
   {
-    //console.log(this.route.snapshot.params['name'])
+    
   }
   
   ngOnInit(){
@@ -22,21 +22,10 @@ export class WelcomeComponent {
   }
    getWelcomeMessage()
    {
-    // console.log(this.service.executeHelloWorldBeanService());
-    // this.service.executeHelloWorldBeanService().subscribe(
-
-    //   response => this.handleSuccessfulResponse(response),
-    //   error => this.handleErrorResponse(error)
-      
-    // );
     this.service.executeHelloWorldServiceWithPathVariable(this.name).subscribe(
          response => this.handleSuccessfulResponse(response),
          error => this.handleErrorResponse(error)
     );
-
-
-
-    console.log('last line of welcome message');
    }
 
    handleSuccessfulResponse(response:any)

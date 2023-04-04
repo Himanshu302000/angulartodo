@@ -20,7 +20,7 @@ export class Todo{
   styleUrls: ['./list-todos.component.css']
 })
 export class ListTodosComponent {
-  message='';
+ message='';
  todo:Todo[]=[]
  constructor(
   private service:TodoDataService,
